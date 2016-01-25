@@ -1,0 +1,261 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/expTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="press7"
+                android:text="7"
+                android:textSize="30dp" />
+
+
+            <Button
+                android:id="@+id/key8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press8"
+                android:text="8"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/key9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press9"
+                android:text="9"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/keyAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="pressAdd"
+                android:text="+"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press4"
+                android:text="4"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/key5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press5"
+                android:text="5"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/key6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press6"
+                android:text="6"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/keySub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="pressSub"
+                android:text="-"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press1"
+                android:text="1"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/key2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press2"
+                android:text="2"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/key3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press3"
+                android:text="3"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/keyPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="pressPro"
+                android:text="*"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="press0"
+                android:text="0"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/keyC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pressC"
+                android:text="C"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/keyDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="pressDiv"
+                android:text="/"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/perage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pressPerage"
+                android:text="%"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clrAll"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:onClick="pressClrAll"
+                android:text="CLR"
+                android:textSize="27dp" />
+            <Button
+                android:id="@+id/keyBpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pressBpen"
+                android:text="("
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/keyBlose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pressBlose"
+                android:text=")"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/keyEql"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="pressEql"
+                android:text="="
+                android:textSize="30dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text=" "
+
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed by Mayank Satnalika "
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="linkedin.com/in/mayank-satnalika-42097571"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
